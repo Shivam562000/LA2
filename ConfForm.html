@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration Form</title>
+    <style>
+        #conf-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        label{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <form id="conf-form" action="http://localhost:4000/register_conference" method="POST">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="Name"> 
+        <label for="city">City</label>
+        <input id="city" type="text" name="City">
+        <label for="branch">Branch</label>
+        <input id="branch" type="text" name="Branch">
+        <label for="conference">Conference</label>
+        <input id="conference" type="text" name="Conference">
+        <input type="submit" value="Submit">  
+    </form> 
+</body>
+</html>
